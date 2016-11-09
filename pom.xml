@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fabrikam.azure</groupId>
+  <artifactId>azuresamples</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>azuresamples</name>
+  <url>http://maven.apache.org</url>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.5.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <cleanupDaemonThreads>false</cleanupDaemonThreads>
+          <mainClass>com.fabrikam.azure.keyvault.RunProgram</mainClass>
+          <arguments>
+          </arguments>
+          <systemProperties>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure</artifactId>
+    <version>1.0.0-beta3</version>
+    </dependency>
+    <dependency>
+    <groupId>io.reactivex</groupId>
+    <artifactId>rxjava</artifactId>
+    <version>1.2.1</version>
+</dependency>
+<dependency>
+    <groupId>com.squareup.okhttp</groupId>
+    <artifactId>logging-interceptor</artifactId>
+    <version>2.7.5</version>
+</dependency>
+<<<<<<< HEAD
+<dependency>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-batch</artifactId>
+    <version>1.0.0-beta2.2</version>
+</dependency>
+||||||| merged common ancestors
+=======
+<dependency>
+  		<groupId>com.microsoft.azure</groupId>
+  		<artifactId>azure-keyvault</artifactId>
+  		<version>1.0.0-beta3</version>
+</dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+>>>>>>> master
+  </dependencies>
+</project>
