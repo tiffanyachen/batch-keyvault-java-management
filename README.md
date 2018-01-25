@@ -1,5 +1,5 @@
 ---
-services: batch key-vault
+services: batch, key-vault
 platforms: java
 author: routlaw
 ---
